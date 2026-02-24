@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "https://visualcraftagency.com/:path*",
+      "destination": "https://www.visualcraftagency.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "https://visualcraftag.vercel.app/:path*",
+      "destination": "https://www.visualcraftagency.com/:path*",
+      "permanent": true
+    }
+  ]
+}
