@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space
 
 export const metadata: Metadata = {
   // 🔴 ESTO ES LO QUE LE DICE A GOOGLE CUÁL ES TU DOMINIO REAL
-  metadataBase: new URL('https://visualcraftagency.com'),
+  metadataBase: new URL('https://www.visualcraftagency.com'),
 
   title: 'VisualCraft | Soluciones Digitales para Restaurantes',
   description:
