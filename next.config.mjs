@@ -3,9 +3,37 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+
   images: {
     unoptimized: true,
   },
-}
 
-export default nextConfig
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'visualcraftagency.com',
+          },
+        ],
+        destination: 'https://www.visualcraftagency.com/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'visualcraftag.vercel.app',
+          },
+        ],
+        destination: 'https://www.visualcraftagency.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
+};
+
+export default nextConfig;
